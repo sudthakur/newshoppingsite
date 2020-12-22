@@ -1,16 +1,15 @@
-import React from 'react';
+import React from 'react'
+import { Link } from 'react-router-dom'
 import './index.css'
 
-const Heading = () => {
-    return (
+const Heading=()=>{
+    return(
         <>
-            <div className="div-heading">
-                    <i className="fa fa-star" aria-hidden="true"></i>
-                    <div className="searchcarticon">
-                        <i className="fa fa-search" aria-hidden="true"></i>
-                        <i className="fa fa-shopping-cart" aria-hidden="true"></i>
-                    </div>
-            </div>
+        <div className="div-heading">
+            <Link to="/">Login</Link>
+            <Link to="/products">Products</Link>
+            <Link to="/cart">Cart</Link>
+        </div>
         </>
     )
 }

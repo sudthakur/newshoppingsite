@@ -29,95 +29,91 @@
   background-color: rgb(61, 191, 252);
   width: 100%;
   height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.fa-star{
-  background-color: rgb(61, 191, 252);
-  float: left;
-  color: orange;
-  padding: 10px;
-  font-size: x-large;
+a{
+  text-decoration: none;
+  font-size: 20px;
+  color: white !important;
 }
 
-.searchcarticon{
-  position: absolute;
-  right: 0;
-  color: white;
-  background-color: rgb(61, 191, 252);
-  padding: 10px;
-  font-size: x-large;
-}
-
-.searchcarticon .fa-search{
-  margin-right: 10px;
-  cursor: pointer;
-}
-
-.subbutton{
-margin: 10px;
-outline: none;
-border: none;
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-height: 30px;
-cursor: pointer;
-}
-.fa-shopping-cart{
-  cursor: pointer;
-}
-
-.div_main .addtocart{
-  border-radius: 20px;
-  background-color: orange;
-  width: 80px;
-  height: 30px;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  /* float: right; */
-  margin: 20px;
-  margin-left: 60px;
-}
-
-.div_main{
-  float: left;
-  margin: 10px;
-  height: 350px;
-  width: 250px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.div_main img{
-  width: 200px;
-  height: 200px;
-}
-
-.div_detail .displayprice{
-  float: left;
-  color: rgb(49, 49, 53);
-}
-
-.div_detail .actualprice{
-  float: left;
-  text-decoration: line-through;
-  margin-left: 10px;
-  color: rgb(49, 49, 53);
-}
-
-.div_detail .discount{
-  float: right;
-  font-weight: bold;
+/* a:hover{
+  border-bottom: 1px solid lightgreen;
   color: lightgreen;
+} */
+
+.login_div{
+  border: 1px solid black;
+  width: 30%;
+  height: 400px;
+  
+  position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+  	
+	margin: auto;
 }
 
-.div_footer{
-  background-color: rgb(61, 191, 252);
-  position: fixed;
-  bottom: 0;
+.login_div > h4{
+  background-color: aquamarine;
   width: 100%;
+  height: 50px;
+  align-items: center;
+  box-shadow: 0 0 10px rgb(11, 12, 12);
   color: white;
-  height: 30px;
+  font-size: 20px;
   text-align: center;
-  padding: 5px;
 }
 
 
+.product_div{
+  width: 100vw;
+}
+
+.card{
+  box-shadow: 0 0 20px black;
+  width: 300px;
+  height: 400px;
+  margin: 20px;
+  float: left;
+}
+
+.cardimage{
+  width: 100%;
+  height: 250px;  
+}
+
+.cardimage img{
+  width: 100%;
+  height: 250px;
+}
+
+.cardbody{
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.cardbody > div{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cardbody div p{
+  font-size: 24px;
+}
+
+/* button{
+  margin-top: 20px;
+  width: 100px;
+  height: 30px;
+} */
+
+.card:hover{
+  transform: scale(1.1,1.1);
+}
